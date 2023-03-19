@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@300;500;700&display=swap");
+
+:root {
+  --brand: #ff4d29;
+  --dark: #092032;
+  --body: #516171;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.7;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  color: var(--dark);
+}
+
+a {
+  color: var(--white);
+  transition: all 0.4s ease;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+img {
+  width: 100%;
+}
+
+/* NavBar */
+.top-nav {
+  background: var(--brand);
+  color: white;
+  padding: 5px 0;
+}
+
+.top-nav p {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.social-links a:hover {
+  color: var(--body) !important;
+}
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+.social-icons a:hover {
+  background: white;
+}
+
+.navbar {
+  box-shadow: var(--shadow);
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+  color: #ff4d29;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--dark);
+}
+
+.navbar-brand span {
+  color: #ff4d29;
+}
+
+/* Btn */
+.btn {
+  padding: 9px 24px;
+  font-weight: 500;
+}
+.btn-brand {
+  background-color: #ff4d29;
+  color: white;
+  border-color: #ff4d29;
+}
+
+.btn-brand:hover {
+  color: white;
+  background-color: #f53a14;
+  transition: all 0.4s ease;
+}
+/* Btn End*/
+
+/* NavBar End */
