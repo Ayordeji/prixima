@@ -159,4 +159,12 @@ img {
 
 /* Slider End */
 
+/* ABOUT */
+section {
+  margin: 80px 0;
+}
 
+.LHS img {
+  width: 80px;
+}
+/* ABOUT END */
