@@ -44,6 +44,20 @@ img {
   background-size: cover !important;
 }
 
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro h6 {
+  font-weight: 400;
+  color: var(--brand);
+}
+
+.intro p {
+  max-width: 500px;
+  margin: auto;
+}
+
 /* NavBar */
 .top-nav {
   background: var(--brand);
@@ -86,7 +100,7 @@ img {
 
 .navbar-nav .nav-item .nav-link:hover,
 .navbar-nav .nav-item .nav-link.active {
-  color: #ff4d29;
+  color: var(--brand);
 }
 
 .navbar-brand {
@@ -96,7 +110,7 @@ img {
 }
 
 .navbar-brand span {
-  color: #ff4d29;
+  color: var(--brand);
 }
 
 /* Btn */
@@ -105,9 +119,9 @@ img {
   font-weight: 500;
 }
 .btn-brand {
-  background-color: #ff4d29;
+  background-color: var(--brand);
   color: white;
-  border-color: #ff4d29;
+  border-color: var(--brand);
 }
 
 .btn-brand:hover {
@@ -155,16 +169,85 @@ img {
 .owl-next:hover {
   background-color: var(--brand) !important;
 }
+
 /* Owl Courosel End*/
 
 /* Slider End */
 
 /* ABOUT */
 section {
-  margin: 80px 0;
+  padding: 80px 0;
 }
 
 .LHS img {
   width: 80px;
 }
 /* ABOUT END */
+
+/* MILESTONES */
+#milestones {
+  background: linear-gradient(rgba(255, 77, 41, 0.9), rgba(255, 77, 41, 0.9)), url(../img/bg_banner1.jpg);
+}
+/* MILESTONES END */
+
+/* SERVICES */
+.service-box {
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.service-box img {
+  width: unset;
+}
+
+.service-box h5 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+/* SERVICES END*/
+
+/* PORTFOLIO */
+.project {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.project h6 {
+  font-weight: 400;
+}
+
+.project h6::before {
+  content: "";
+  height: 2px;
+  width: 30px;
+  display: inline-block;
+  background: var(--brand);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.project .overlay {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+}
+
+.project .content {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+
+.project h2,
+.project h6 {
+  color: #fff;
+}
+
+.owl-dot.active span {
+  background-color: var(--brand) !important;
+}
+/* PORTFOLIO END */
