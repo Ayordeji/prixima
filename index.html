@@ -7,12 +7,13 @@
     <title>Prixima</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="shortcut icon" type="image" href="./img/icon1.png" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- Main NavBar -->
     <nav class="top-nav" id="home">
       <div class="container">
@@ -36,7 +37,7 @@
       </div>
     </nav>
     <!-- Bottom NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#home">Prixima<span>.</span></a>
@@ -82,7 +83,7 @@
     <!-- End Main NavBar -->
 
     <!-- SLIDER -->
-    <div class="slider-wrapper">
+    <div class="hero-slider owl-carousel owl-theme">
       <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
         <div class="container">
           <div class="row">
@@ -98,11 +99,29 @@
           </div>
         </div>
       </div>
+
+      <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h6 class="text-uppercase text-white">design driven for professionals</h6>
+              <h1 class="text-uppercase display-2 my-3 text-white">
+                we craft digital <br />
+                experiences
+              </h1>
+              <a href="#" class="btn btn-brand">Get Started</a>
+              <a href="#" class="btn btn-outline-light ms-3">Our Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!-- SLIDER END -->
 
+    <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

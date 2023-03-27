@@ -1,0 +1,20 @@
+$(document).ready(function () {
+  //Owl
+  $(".hero-slider").owlCarousel({
+    loop: true,
+    nav: true,
+    items: 1,
+    dots: false,
+    navText: ["PREV", "NEXT"],
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        nav: false,
+      },
+
+      768: {},
+
+      1000: {},
+    },
+  });
+});
