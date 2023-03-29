@@ -88,10 +88,12 @@ img {
   align-items: center;
   font-size: 16px;
   border-radius: 100%;
+  color: white;
 }
 
 .social-icons a:hover {
   background: white;
+  color: var(--brand);
 }
 
 .navbar {
@@ -251,3 +253,44 @@ section {
   background-color: var(--brand) !important;
 }
 /* PORTFOLIO END */
+
+/* TEAM */
+.team-member .overlay {
+  background-color: rgba(255, 77, 41, 0.8);
+  height: 100%;
+  width: 100%;
+  top: -10%;
+  right: 10%;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.team-member .social-icons {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.team-member:hover .overlay{
+  opacity: 1;
+  top: 0; 
+  right: 0;
+}
+
+.team-member:hover .social-icons{
+  opacity: 1;
+  top: 50%; 
+  left: 50;
+}
+
+.team-member .social-icons a {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  
+}
+
+/* TEAM END*/
