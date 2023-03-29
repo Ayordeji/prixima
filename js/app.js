@@ -38,4 +38,14 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".reviews-slider").owlCarousel({
+    loop: true,
+    nav: false,
+    margin:10,
+    items: 1,
+    dots: true,
+    smartSpeed: 600,
+    center: true,
+  });
 });

@@ -274,15 +274,15 @@ section {
   opacity: 0;
 }
 
-.team-member:hover .overlay{
+.team-member:hover .overlay {
   opacity: 1;
-  top: 0; 
+  top: 0;
   right: 0;
 }
 
-.team-member:hover .social-icons{
+.team-member:hover .social-icons {
   opacity: 1;
-  top: 50%; 
+  top: 50%;
   left: 50;
 }
 
@@ -290,7 +290,39 @@ section {
   width: 40px;
   height: 40px;
   font-size: 16px;
-  
 }
 
 /* TEAM END*/
+
+/* REVIEWS */
+.reviews-slider {
+  background: linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(../img/bg_banner1.jpg);
+  padding: 80px 0;
+}
+
+.slider-content {
+  max-width: 800px;
+}
+
+.slider-content img {
+  width: 85px !important;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.slider-content h4 {
+  margin-top: 16px;
+}
+
+.slider-content p {
+  margin-top: 28px;
+}
+
+.slider-content h4, .slider-content p {
+  color: white;
+}
+
+.slider-content small {
+  color: var(--brand);
+}
+/* REVIEWS END */
