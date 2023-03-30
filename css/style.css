@@ -6,6 +6,7 @@
   --body: #516171;
   --border: rgba(0, 0, 0, 0.08);
   --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0px 6px 30px rgba(0, 0, 0, 0.212);
 }
 
 body {
@@ -49,7 +50,7 @@ img {
 }
 
 .intro h6 {
-  font-weight: 400;
+  font-weight: 400 !important;
   color: var(--brand);
 }
 
@@ -123,13 +124,14 @@ img {
 .btn-brand {
   background-color: var(--brand);
   color: white;
-  border-color: var(--brand);
+  border-color: var(--brand) !important;
 }
 
 .btn-brand:hover {
   color: white;
   background-color: #f53a14;
   transition: all 0.4s ease;
+  border-color: var(--brand) !important;
 }
 /* Btn End*/
 
@@ -155,7 +157,7 @@ img {
   margin-top: -30px !important;
   color: white !important;
   font-weight: 700 !important;
-  font-size: 12px;
+  font-size: 12px !important;
   border-radius: 100% !important;
 }
 
@@ -170,6 +172,7 @@ img {
 .owl-prev:hover,
 .owl-next:hover {
   background-color: var(--brand) !important;
+  transition: all 0.5s ease;
 }
 
 /* Owl Courosel End*/
@@ -196,6 +199,10 @@ section {
 .service-box {
   box-shadow: var(--shadow);
   padding: 32px;
+}
+
+.service-box:hover {
+  box-shadow: var(--shadow-hover);
 }
 
 .service-box img {
@@ -295,19 +302,44 @@ section {
 /* TEAM END*/
 
 /* REVIEWS */
-.reviews-slider {
-  background: linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(../img/bg_banner1.jpg);
-  padding: 80px 0;
+#reviews {
+  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg), #082032;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.review {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin: 15px;
+  max-width: 768px;
+  margin: auto;
 }
 
 .slider-content {
-  max-width: 800px;
+  max-width: 900px;
+}
+
+.slider-content .stars {
+  color: var(--brand);
 }
 
 .slider-content img {
   width: 85px !important;
   margin: auto;
   border-radius: 100%;
+}
+
+.slider-content .bxs-quote-alt-left {
+  font-size: 120px;
+  position: absolute;
+  opacity: 0.1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .slider-content h4 {
@@ -318,11 +350,105 @@ section {
   margin-top: 28px;
 }
 
-.slider-content h4, .slider-content p {
+.slider-content h4,
+.slider-content p {
   color: white;
 }
 
 .slider-content small {
   color: var(--brand);
 }
+
 /* REVIEWS END */
+
+/* BLOG */
+.blog-post {
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.blog-post:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.blog-post .tag {
+  color: white;
+  background-color: var(--brand);
+  padding: 4px 12px;
+  border-radius: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.blog-post .content {
+  padding: 32px;
+}
+
+.blog-post img {
+  margin-bottom: 12px;
+}
+
+.blog-post small {
+  color: var(--brand);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.blog-post h4 {
+  margin: 12px 0;
+}
+
+.blog-post a {
+  font-weight: 700 !important;
+}
+
+/* BLOG END */
+
+/* FOOTER */
+#footer {
+  background: linear-gradient(rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg);
+  padding-bottom: 20px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+
+#footer .navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+#footer p {
+  color: #adb3b9;
+  margin-bottom: 1rem;
+}
+
+#footer .social-icons a {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 0 4px;
+}
+
+/* FOOTER END */
+
+/* CONTACT US */
+input.form-control {
+  border-color: transparent;
+  height: 44px;
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.04);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--brand);
+}
+/* CONTACT US END */

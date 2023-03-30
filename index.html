@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -76,7 +75,7 @@
           </ul>
           <!-- Menu Links End-->
 
-          <a href="#contact" class="btn btn-brand ms-lg-3">Contact Us</a>
+          <a href="#contact" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Contact Us</a>
         </div>
       </div>
     </nav>
@@ -386,36 +385,195 @@
     <!-- REVIEWS -->
     <section id="reviews">
       <div class="reviews-slider owl-carousel owl-theme bg-cover">
-        <div class="slider-content text-center mx-auto">
-          <img src="./img/team_1.jpg" alt="" />
-          <h4>Ralph Edwards</h4>
-          <small>Markert Development Manager</small>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fuga, eos maxime perspiciatis maiores odit inventore nobis, unde doloribus, reprehenderit voluptatem. Dolorum consectetur maiores deleniti sapiente
-            est quae dolor temporibus aspernatur! Culpa!
-          </p>
+        <div class="review">
+          <div class="slider-content text-center mx-auto">
+            <img src="./img/team_1.jpg" alt="" />
+            <h4>Ralph Edwards</h4>
+            <small>Markert Development Manager</small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fuga, eos maxime perspiciatis maiores odit inventore nobis, unde doloribus, reprehenderit voluptatem. Dolorum consectetur maiores deleniti
+              sapiente est quae dolor temporibus aspernatur! Culpa!
+            </p>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+            <i class="bx bxs-quote-alt-left"></i>
+          </div>
         </div>
         <div class="slider-content text-center mx-auto">
-          <img src="./img/team_2.jpg" alt="" />
-          <h4>Ralph Edwards</h4>
-          <small>Markert Development Manager</small>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fuga, eos maxime perspiciatis maiores odit inventore nobis, unde doloribus, reprehenderit voluptatem. Dolorum consectetur maiores deleniti sapiente
-            est quae dolor temporibus aspernatur! Culpa!
-          </p>
+          <div class="review">
+            <img src="./img/team_2.jpg" alt="" />
+            <h4>Ralph Edwards</h4>
+            <small>Markert Development Manager</small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fuga, eos maxime perspiciatis maiores odit inventore nobis, unde doloribus, reprehenderit voluptatem. Dolorum consectetur maiores deleniti
+              sapiente est quae dolor temporibus aspernatur! Culpa!
+            </p>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <i class="bx bxs-quote-alt-left"></i>
+          </div>
         </div>
         <div class="slider-content text-center mx-auto">
-          <img src="./img/team_3.jpg" alt="" />
-          <h4>Ralph Edwards</h4>
-          <small>Markert Development Manager</small>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fuga, eos maxime perspiciatis maiores odit inventore nobis, unde doloribus, reprehenderit voluptatem. Dolorum consectetur maiores deleniti sapiente
-            est quae dolor temporibus aspernatur! Culpa!
-          </p>
+          <div class="review">
+            <img src="./img/team_3.jpg" alt="" />
+            <h4>Ralph Edwards</h4>
+            <small>Markert Development Manager</small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fuga, eos maxime perspiciatis maiores odit inventore nobis, unde doloribus, reprehenderit voluptatem. Dolorum consectetur maiores deleniti
+              sapiente est quae dolor temporibus aspernatur! Culpa!
+            </p>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+            <i class="bx bxs-quote-alt-left"></i>
+          </div>
         </div>
       </div>
     </section>
     <!-- REVIEWS END -->
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="intro text-center">
+              <h6>BLOG</h6>
+              <h1>Blog Posts</h1>
+              <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="blog-post">
+              <a href="#blog" class="tag">Web Design</a>
+              <img src="./img/project5.jpg" alt="" />
+              <div class="content">
+                <small>06 jun, 2023</small>
+                <h4><a href="#">Web Design trends in 2022</a></h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="blog-post">
+              <a href="#blog" class="tag">Programming</a>
+              <img src="./img/project4.jpg" alt="" />
+              <div class="content">
+                <small>20 may, 2023</small>
+                <h4><a href="#">Web Design trends in 2022</a></h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="blog-post">
+              <a href="#blog" class="tag">Marketing</a>
+              <img src="./img/project2.jpg" alt="" />
+              <div class="content">
+                <small>26 jun, 2023</small>
+                <h4><a href="#">Web Design trends in 2022</a></h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BLOG END -->
+
+    <!-- FOOTER -->
+    <section id="footer" class="bg-cover">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="intro text-center">
+                <a class="navbar-brand" href="#home">Prixima<span>.</span></a>
+                <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+                <div class="col-auto social-icons">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                  <a href="#"><i class="bx bxl-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="mb-0 text-center">Copyright@2023. All rights Reserved</p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER END -->
+
+    <!-- MODAL FOR CONTACT US -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="container-fluid">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-sm-12 bg-cover" style="background-image: url(img/c2.jpg); min-height: 300px">
+                  <div></div>
+                </div>
+                <div class="col-lg-8">
+                  <form class="p-lg-5 col-12 row g-3">
+                    <div>
+                      <h1>Get in touch</h1>
+                      <p>Feel free to contact us and we will get back to you as soon as possible</p>
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="userName" class="form-label">First name</label>
+                      <input type="text" class="form-control" placeholder="Jon" id="userName" aria-describedby="emailHelp" />
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="userName" class="form-label">Last name</label>
+                      <input type="text" class="form-control" placeholder="Doe" id="userName" aria-describedby="emailHelp" />
+                    </div>
+                    <div class="col-12">
+                      <label for="userName" class="form-label">Email address</label>
+                      <input type="email" class="form-control" placeholder="Johndoe@example.com" id="userName" aria-describedby="emailHelp" />
+                    </div>
+                    <div class="col-12">
+                      <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                      <textarea name="" placeholder="This is looking great and nice." class="form-control" id="" rows="4"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-brand">Send Message</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL FOR CONTACT US END -->
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
